@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}body{width:300px;font-family:system-ui,sans-serif;background:#1a1a2e;color:#e0e0e0}.header{padding:14px 16px;background:#16213e;border-bottom:1px solid rgba(255,255,255,.06)}.header-top{display:flex;align-items:center;gap:10px}.logo{width:26px;height:26px;background:#0a8f4f;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:800;color:#fff}.header h1{font-size:14px;font-weight:700;color:#fff}.header .sub{font-size:11px;color:#888;margin-top:2px;padding-left:36px}.sec{padding:12px 16px;border-bottom:1px solid rgba(255,255,255,.06)}.lbl{font-size:10px;text-transform:uppercase;letter-spacing:1px;color:#666;margin-bottom:8px}.row{display:flex;align-items:center;justify-content:space-between}.dom{font-size:13px;color:#00d2ff;font-weight:600;max-width:180px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.sm{font-size:12px;color:#aaa}.tog{position:relative;width:40px;height:22px}.tog input{opacity:0;width:0;height:0}.tog span{position:absolute;cursor:pointer;inset:0;background:#333;border-radius:22px;transition:.2s}.tog span::before{content:"";position:absolute;height:16px;width:16px;left:3px;bottom:3px;background:#fff;border-radius:50%;transition:.2s}.tog input:checked+span{background:#0a8f4f}.tog input:checked+span::before{transform:translateX(18px)}.list{max-height:160px;overflow-y:auto;margin-top:6px}.item{display:flex;align-items:center;justify-content:space-between;padding:6px 0;border-bottom:1px solid rgba(255,255,255,.03)}.item:last-child{border-bottom:0}.idom{font-size:11px;color:#ccc;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.irm{background:0;border:0;color:#555;cursor:pointer;font-size:13px;padding:2px 4px;border-radius:4px;margin-left:6px}.irm:hover{color:#ff4757;background:rgba(255,71,87,.1)}.emp{font-size:11px;color:#555;text-align:center;padding:12px 0}.foot{padding:8px 16px;text-align:center;border-top:1px solid rgba(255,255,255,.06)}.ft{font-size:10px;color:#444}.dot{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:4px;vertical-align:middle}.dot.on{background:#0a8f4f;box-shadow:0 0 4px rgba(10,143,79,.5)}.dot.off{background:#555}.clr{font-size:10px;color:#ff4757;background:0;border:0;cursor:pointer;padding:2px 6px;border-radius:4px}.clr:hover{background:rgba(255,71,87,.15)}
+</style>
+</head>
+<body>
+<div class="header"><div class="header-top"><div class="logo">C+E</div><h1>Ctrl+Enter Sender</h1></div><div class="sub">Enterの誤送信を防止</div></div>
+<div class="sec"><div class="lbl">現在のサイト</div><div class="row"><span id="dom" class="dom">—</span><label class="tog" id="cw"><input type="checkbox" id="ct"><span></span></label></div></div>
+<div class="sec"><div class="row"><span class="sm">新しいサイトでデフォルトON</span><label class="tog"><input type="checkbox" id="gt" checked><span></span></label></div></div>
+<div class="sec"><div class="row"><span class="lbl" style="margin:0">サイト個別設定</span><button class="clr" id="ca">すべて削除</button></div><div class="list" id="sl"><div class="emp">個別設定はありません</div></div></div>
+<div class="foot"><span class="ft"><span class="dot" id="d"></span><span id="st">—</span></span></div>
+<script src="popup.js"></script>
+</body>
+</html>
